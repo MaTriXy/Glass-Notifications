@@ -20,20 +20,28 @@ Here is a screen shot of Glass-Notifications capturing my notifications and allo
 ===============================================================================================
 Here is the notification telling me I have an auto awesome picture waiting for me.  This notification made a sound on my phone, so it also made a sound on Glass to let me know there is something waiting for me.  If I look up within 5 seconds, the notificaiton will be there for me to see.
 
+GLASS SCREENSHOT:
+
 ![Screenshot](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-autoawesome.png?raw=true)
 
 ===============================================================================================
 The auto awesome notificaiton is dismisable on my phone.  So, I have the option to dismiss it from Glass.
+
+GLASS SCREENSHOT:
 
 ![Screenshot](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-autoawesome-dismiss.png?raw=true)
 
 ===============================================================================================
 I have installed an app called Notificaiton Weather from the play store.  This app puts a permenant weather forcast im my notifications.  This is not dismisable so it's just a livecard that gives me the weather. BONUS!
 
+GLASS SCREENSHOT:
+
 ![Screenshot](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-weather.png?raw=true)
 
 ===============================================================================================
 This is just an example of a simpler notification.
+
+GLASS SCREENSHOT:
 
 ![Screenshot](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-small.png?raw=true)
 

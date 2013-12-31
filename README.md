@@ -2,7 +2,7 @@ Glass-Notifications
 ===================
 A Google Glass applications that will clone notifications from an Android 4.3+ device to Google Glass.
 
-* This app will uses my IntentTunnel project for communication from the phone to Glass.  IntentTunnel is a Intent router that handles bluetooth communications for multiple applications using a single bluetooth connection.
+* This app will uses my [IntentTunnel](https://github.com/TheMasterBaron/Glass-IntentTunnel/) project for communication from the phone to Glass.  IntentTunnel is a Intent router that handles bluetooth communications for multiple applications using a single bluetooth connection.
 
 Here is a screen shot of my notifications bar pulled down on my phone:
 ![Screenshot](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/phone-notifications.png?raw=true)

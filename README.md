@@ -62,7 +62,7 @@ WORKS ON ANDROID 4.3+ ONLY
 4. After installing the APK on Glass, start the Glass-Notifications service on Glass usng Glass Launcher, Launchy, or using this command adb:
 <code>adb shell am start -n com.masterbaron.notifications/com.masterbaron.notifications.LaunchActivity</code>
 
-5. Intall the APK on you Phone and run Glass-Notifications.  The first time you loanch it, it should give you a button to press to enable Notification Access for Glass-Notificaitons.  After enabling notificaiton access, you can then select which notifications you would like to send to Glass.
+5. Intall the APK on you Phone and run Glass-Notifications.  The first time you launch it, it should give you a button to press to enable Notification Access for Glass-Notificaitons.  After enabling notificaiton access, you can then select which notifications you would like to send to Glass.
 
 If IntentTunnel is running you should start seeing notifications on Glass.
 

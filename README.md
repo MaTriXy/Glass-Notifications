@@ -54,7 +54,7 @@ WORKS ON ANDROID 4.3+ ONLY
 
 1. Download and install [IntentTunnel](https://github.com/TheMasterBaron/Glass-IntentTunnel/).  Check the readme on how to install IntentTunnel on both your phone and Glass.
 
-2. Download the Glass-Notifications APK [here](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/apk/Glass-Notifications-debug-unaligned-0.0.1.apk?raw=true)
+2. Download the Glass-Notifications APK [here](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/apk/Glass-Notifications-debug-unaligned-0.0.1.apk?raw=true).  The same APK is for the phone and Glass
 
 3. Intall the APK on Glass using this command:
 <code>adb install -r Glass-Notifications-debug-unaligned.apk</code>

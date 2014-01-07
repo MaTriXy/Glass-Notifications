@@ -69,4 +69,5 @@ If IntentTunnel is running you should start seeing notifications on Glass.
 Change Log:
 ===========
 0.0.2: Don't bypass service on broadcast
+
 0.0.1: Initial Release

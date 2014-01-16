@@ -68,7 +68,7 @@ If IntentTunnel is running you should start seeing notifications on Glass.
 
 Change Log:
 ===========
-0.0.3: New GUI and option to remove action buttons (on by default)
+[0.0.3](https://github.com/TheMasterBaron/Glass-Notifications/blob/master/apk/Glass-Notifications-debug-unaligned-0.0.3.apk?raw=true): New GUI and option to remove action buttons (on by default)
 
 0.0.2: Don't bypass service on broadcast
 

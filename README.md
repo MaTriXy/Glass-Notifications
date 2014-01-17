@@ -48,7 +48,7 @@ GLASS SCREENSHOT:
 
 
 
-Intall Instructions
+Install Instructions
 ===================
 WORKS ON ANDROID 4.3+ ONLY
 

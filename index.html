@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Glass Notifications : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Glass Notifications</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/TheMasterBaron/Glass-Notifications">View on GitHub</a>
+
+          <h1 id="project_title">Glass Notifications</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/TheMasterBaron/Glass-Notifications/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/TheMasterBaron/Glass-Notifications/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="glass-notifications" class="anchor" href="#glass-notifications"><span class="octicon octicon-link"></span></a>Glass-Notifications</h1>
+
+<p>A Google Glass application that will clone notifications from an Android 4.3+ device to Google Glass.  </p>
+
+<ul>
+<li>This app will uses my <a href="https://github.com/TheMasterBaron/Glass-IntentTunnel/">IntentTunnel</a> project for communication from the phone to Glass.  IntentTunnel is a Intent router that handles bluetooth communications for multiple applications using a single bluetooth connection.</li>
+</ul><p>In Android 4.3, they introduced the option to capure notifications.  This is how Glass-Notifications will be able to forward your notificaitons to Glass
+Goto Settings-&gt;Security-&gt;Notification Access and enable Glass-Notifications.</p>
+
+<p><img src="https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/phone-notification-access.png?raw=true" alt="Screenshot"></p>
+
+<h1></h1>
+
+<p>Here is a screen shot of my notifications bar pulled down on my phone:
+<img src="https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/phone-notifications.png?raw=true" alt="Screenshot"></p>
+
+<p>Here is a screen shot of Glass-Notifications capturing my notifications and allowing me to pick which ones I want.  By default, notificaitons that are dismissable are enabled and ones that are not are disabled.  You can enable/disable them using this tool.  Also, when capturing the notifications, the larger versions of the notificaiton are used to show more information on Glass.</p>
+
+<p><img src="https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/phone-captured-notifications.png?raw=true" alt="Screenshot"></p>
+
+<h1></h1>
+
+<p>Here is the notification telling me I have an auto awesome picture waiting for me.  This notification made a sound on my phone, so it also made a sound on Glass to let me know there is something waiting for me.  If I look up within 5 seconds, the notificaiton will be there for me to see.</p>
+
+<p>GLASS SCREENSHOT:</p>
+
+<p><img src="https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-autoawesome.png?raw=true" alt="Screenshot"></p>
+
+<h1></h1>
+
+<p>The auto awesome notificaiton is dismisable on my phone.  So, I have the option to dismiss it from Glass.</p>
+
+<p>GLASS SCREENSHOT:</p>
+
+<p><img src="https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-autoawesome-dismiss.png?raw=true" alt="Screenshot"></p>
+
+<h1></h1>
+
+<p>I have installed an app called Notificaiton Weather from the play store.  This app puts a permenant weather forcast im my notifications.  This is not dismisable so it's just a livecard that gives me the weather. BONUS!</p>
+
+<p>GLASS SCREENSHOT:</p>
+
+<p><img src="https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-weather.png?raw=true" alt="Screenshot"></p>
+
+<h1></h1>
+
+<p>This is just an example of a simpler notification.</p>
+
+<p>GLASS SCREENSHOT:</p>
+
+<p><img src="https://github.com/TheMasterBaron/Glass-Notifications/blob/master/screenshots/glass-small.png?raw=true" alt="Screenshot"></p>
+
+<h1>
+<a name="install-instructions" class="anchor" href="#install-instructions"><span class="octicon octicon-link"></span></a>Install Instructions</h1>
+
+<p>WORKS ON ANDROID 4.3+ ONLY</p>
+
+<ol>
+<li><p>Download and install <a href="https://github.com/TheMasterBaron/Glass-IntentTunnel/">IntentTunnel</a>.  Check the readme on how to install IntentTunnel on both your phone and Glass.</p></li>
+<li><p>Download the Glass-Notifications APK <a href="https://github.com/TheMasterBaron/Glass-Notifications/releases/download/v0.0.3/Glass-Notifications-debug-unaligned-0.0.3.apk">here</a>.  The same APK is for the phone and Glass</p></li>
+<li><p>Intall the APK on Glass using this command:
+<code>adb install -r Glass-Notifications-debug-unaligned.apk</code></p></li>
+<li><p>After installing the APK on Glass, start the Glass-Notifications service on Glass usng Glass Launcher, Launchy, or using this command adb:
+<code>adb shell am start -n com.masterbaron.notifications/com.masterbaron.notifications.LaunchActivity</code></p></li>
+<li><p>Intall the APK on you Phone and run Glass-Notifications.  The first time you launch it, it should give you a button to press to enable Notification Access for Glass-Notificaitons.  After enabling notificaiton access, you can then select which notifications you would like to send to Glass.</p></li>
+</ol><p>If IntentTunnel is running you should start seeing notifications on Glass.</p>
+
+<h1>
+<a name="change-log" class="anchor" href="#change-log"><span class="octicon octicon-link"></span></a>Change Log:</h1>
+
+<p><a href="https://github.com/TheMasterBaron/Glass-Notifications/releases/download/v0.0.3/Glass-Notifications-debug-unaligned-0.0.3.apk">0.0.3</a>: New GUI and option to remove action buttons (on by default)</p>
+
+<p>0.0.2: Don't bypass service on broadcast</p>
+
+<p>0.0.1: Initial Release</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Glass Notifications maintained by <a href="https://github.com/TheMasterBaron">TheMasterBaron</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
